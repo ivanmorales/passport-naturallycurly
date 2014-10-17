@@ -1,0 +1,49 @@
+{
+  "name": "passport-naturallycurly",
+  "version": "0.0.1",
+  "description": "NaturallyCurly authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "naturallycurly",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivanmorales/passport-naturallycurly.git"
+  },
+  "bugs": {
+    "url": "http://github.com/ivanmorales/passport-naturallycurly/issues"
+  },
+  "author": {
+    "name": "Ivan Morales",
+    "email": "ivan@naturallycurly.com",
+    "url": "http://www.naturallycurly.com/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib/passport-naturallycurly",
+  "dependencies": {
+    "pkginfo": "0.2.x",
+    "passport-oauth": "0.1.x"
+  },
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/ivanmorales/passport-naturallycurly",
+  "_id": "passport-naturallycurly@0.0.1",
+  "_from": "passport-naturallycurly@~0.0.1"
+}
