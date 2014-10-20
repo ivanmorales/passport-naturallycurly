@@ -34,7 +34,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new NaturallyCurlyStrategy({
     consumerKey: NC_API_KEY,
     consumerSecret: NC_SECRET_KEY,
-    callbackURL: "http://127.0.0.1:3000/auth/naturallycurly/callback"
+    callbackURL: "http://127.0.0.1:3030/auth/naturallycurly/callback"
   },
   function(token, tokenSecret, profile, done) {
     // asynchronous verification, for effect...
@@ -53,7 +53,7 @@ var app = express();
 // configure Express
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
-  app.use(logger("combined"));
+  app.use(logger("tiny"));
   app.use(cookieParser());
   app.use(bodyParser.urlencoded({extended: false}));
   app.use(methodOverride());
